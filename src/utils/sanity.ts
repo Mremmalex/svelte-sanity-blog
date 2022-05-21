@@ -3,7 +3,7 @@ import imageUrlBuilder from '@sanity/image-url';
 
 const sanity = SanityClient({
 	apiVersion: 'v2022-05-21',
-	projectId: 'wpk2zljf',
+	projectId: import.meta.env.VITE_PUBLIC_PROJECT_ID,
 	dataset: 'production',
 	useCdn: false
 });
